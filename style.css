@@ -1,0 +1,96 @@
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 20px;
+    border: 1px solid #333;
+    background-color: rgb(52, 242, 52);
+}
+
+.nav-links{
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: rgb(227, 61, 61);
+}
+
+.body {
+  background-color: #2e8b57;  
+  font-family: 'Arial', sans-serif;
+  color: #fff;
+}
+
+.trial{
+  background-color: #000;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.day {
+  text-align: center;
+  padding: 60px 20px;
+  float: left;
+}
+
+.h1{
+    font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.h2{
+    font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.p{
+  font-size: 1.1em;
+  margin-bottom: 30px;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+}
+
+.input{
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  margin-right: 10px;
+}
+
+.button{
+  padding: 10px 20px;
+  border: none;
+  background-color: #000;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.clothes{
+  display: flex;
+  justify-content: space-around;
+  padding: 30px 10px;
+}
+
+.shirts{
+  width: 180px;
+  height: 350px;
+  border-radius: 10px;
+}
+
+.ss{
+  width: 180px;
+  height: 250px;
+  border-radius: 10px;
+}
+
+.shoes{
+  width: 180px;
+  height: 300px;
+  border-radius: 10px;
+}
