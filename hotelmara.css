@@ -1,0 +1,215 @@
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 10px;
+    box-shadow: 6px 0px 8px 7px rgb(0 0 0 / 19%);
+    padding: 15px 0px;
+    
+}
+
+.nav-links{
+    display: flex;
+    gap: 5rem;
+    list-style: none;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    position: relative;
+    padding: 15px 0;
+    cursor: pointer;
+    font-weight: 500;
+    transition: opacity 0.3s ease;
+}
+
+.nav-links:hover a{
+    opacity: 0.4;
+}
+
+.nav-links a:hover{
+    opacity: 1 !important;
+}
+
+.nav-link a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 2px;
+    height: 2px;
+    width: 0%;
+    background: red;
+    transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after{
+    width: 100%;
+}
+
+.body {  
+  background-color: #2e8b57;  
+  font-family: 'Arial', sans-serif;
+  color: #fff;    
+}
+
+.logo{
+    width: 180px;
+    height: 98px;
+}
+
+.vacation{
+    text-align: center;
+}
+
+.register{
+   background-color: rgba(255, 0, 0, 0.653);
+  padding: 20px;
+  color: white;
+  margin-left: 40px;
+  margin-right: 40px;
+  border-radius: 30px;
+  
+}
+
+.in{
+    margin-left: 30px;
+    width: 150px;
+    height: 30px;
+    border-radius: 20px;
+    border: none;
+    font-size: 15px;
+    font:bold;
+}
+
+.label{
+    margin-left: 20px;
+}
+
+.but{
+    background-color: black;
+    color: white;
+    border-color: #fff;
+}
+
+.backvideo{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9){
+    .backvideo{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9){
+    .backvideo{
+        width: auto;
+        height: 100%;
+    }
+}
+
+.mara{
+     background-image: url(/lakeresort.jpg);
+    background-attachment: scroll;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 1500px;
+
+}
+
+.name{
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: x-large;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin-top: 200px;
+}
+
+.bed{
+    width: 500px;
+    height: 400px;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.overlay-container {
+    position: relative;
+    display: inline-block;
+    margin: 30px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* dark transparent overlay */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+    opacity: 0; /* hidden by default */
+    transition: opacity 0.4s ease;
+    border-radius: 8px;
+}
+
+/* Show overlay on hover */
+.overlay-container:hover .overlay {
+    opacity: 2;
+}
+
+.glow{
+    font-size: 1.5rem;
+    color: #fff;
+    padding: 15px 30px;
+    margin: 10px;
+    border: 2px solid #0ff;
+    border-radius: 50px;
+    background: transparent;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+
+.glow::before{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.3 ), rgba(0, 255, 255, 0) 70%);
+    transition: 0.4s;
+    transform: scale(0);
+}
+
+.glow:hover::before{
+    transform: scale(1);
+}
+
+.glow:hover{
+    color: #000;
+    background: #0ff;
+    box-shadow: 0 0 15px #0ff, 0 0 60px #0ff, 0 0 120px #0ff;
+}
+
+.glow:active{
+    transform: scale(0.95);
+}
+
+.rep{
+    background-color: #000;
+}
